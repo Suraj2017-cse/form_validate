@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e908ec99e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="navbrand">suraj</div>
+            <div class="navlink">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <form action="https://formspree.io/f/mgebvlga" method="post">
+            <div class="form-control">
+                <label for="fname">First Name <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="First_Name" id="fname" placeholder="First Name">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="mname" class="mt-3">Middle Name</label>
+                <input type="text" name="Middle_Name" id="mname" placeholder="Middle Name">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="lname">Last Name <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Last_Name" id="lname" placeholder="Last Name">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="dob">Date Of Birth <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="date" name="DOB" id="dob" placeholder="Date Of Birth">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="faname">Father's Name <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Father's_Name" id="faname" placeholder="Father's Name">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="moname">Mother's Name <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Mother's_Name" id="moname" placeholder="Mother's Name">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="vill">Village/City <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Village" id="vill" placeholder="village">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="Post">Post Office <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Post_Office" id="post" placeholder="Post Office">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="dist">District <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="District" id="dist" placeholder="District">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="state">State <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="State" id="state" placeholder="State">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="pin">Pin Code <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="pin_Code" id="pin" placeholder="Pin Code">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="email">Email <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="email" name="Email" id="email" placeholder="Email">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="mob">Mobile Number <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Mobile_No." id="mob" placeholder="Mobile Number">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="qualification">Qualification <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="text" name="Qualification" id="qualification" placeholder="Qualification">
+                <div class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="photo">Photo <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                <input type="file" name="Photo" id="photo">
+                <img id="blah" src="#" alt="">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

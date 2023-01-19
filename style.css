@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #d8bfd8;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-family: 'Rajdhani', sans-serif;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbrand{
+    font-size: 2.5rem;
+        color: #e0eff2;
+        text-shadow: -4px 3px 0 #3a50d9;
+}
+.navlink ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navlink ul li{
+    list-style: none;
+    margin-left: 30px;
+    padding: 1rem;
+}
+.navlink ul li:hover{
+    background-color: #9acd32;
+}
+.navlink ul li:hover a{
+    color: #ff6347;
+}
+.navlink ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;    
+}
+@media only screen and (max-width:768px) {
+    nav .container{
+        display: block;
+        text-align: center;
+    }
+    .navlink ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navlink ul li{
+        margin-left: 0;
+    }
+}
+
+/* section  */
+sup i{
+    font-size: .49rem;
+    color: #cf0505;
+}
+.mt-3{
+    margin-top: .28em;
+}
+section{
+    background-color: #569173;
+    padding: 2rem;
+}
+.container form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .7rem;
+    font-family: 'Playfair Display', serif;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    grid-gap: .6em;
+}
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.form-control input {
+    padding: .4rem;
+    font-size: 1rem;
+    font-family: 'Sofia Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+}
+.form-control input:focus{
+    border: 2px solid #033512;
+}
+.btn{
+    padding: .6em;
+    font-size: 1rem;
+    color: #008080;
+    border: 2px solid #008080;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: none;
+    transition: all .5s ease-in;
+}
+.btn:hover{
+    background: #008080;
+    color: #ffffff;
+    cursor: pointer;
+}
